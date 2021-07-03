@@ -1,6 +1,6 @@
 # ViewTube
 
-### Guarding Routes in Angular
+### Guard Routes in an SPA
 
 1. The video available with the boilerplate demonstrates the working of ViewTube application.
 
