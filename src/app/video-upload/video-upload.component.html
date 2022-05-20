@@ -1,0 +1,24 @@
+
+    <mat-drawer-container class="example-container">
+      <mat-drawer mode="side" opened>
+        <h1><a routerLink="home" class="sideNavHeading">ViewTube</a></h1>
+        <a routerLink="studio-upload"><button mat-button id="side">Upload</button></a>
+        <br>
+        <a routerLink="studio-livestream"><button mat-button id="side">Live</button></a>
+      </mat-drawer>
+      <mat-drawer-content>
+        <router-outlet></router-outlet>
+      </mat-drawer-content>
+    </mat-drawer-container>
+    
+    
+    
+    
+    
+    
+      
+     <!-- <mat-form-field appearance="outline">
+                      <mat-label>Outline form field</mat-label>
+                      <input matInput placeholder="video Url">
+                      <mat-hint>video url needs to be of type youtube embed</mat-hint>
+                    </mat-form-field>-->

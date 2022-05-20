@@ -1,0 +1,28 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto
+}
+.left{
+  padding: 5px;
+}
+.right{
+  padding: 5px;
+}
+.videoDetailH{
+  float:left;
+}
+.saveBtn{
+  margin-left: 60%;
+
+}
+mat-form-field {
+  width: 100%;
+}
+#side{
+  width:100%;
+  text-align: left;
+}
+mat-drawer{
+  padding: 5px;
+  width:15%;
+}

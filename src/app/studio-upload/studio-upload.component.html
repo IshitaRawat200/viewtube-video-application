@@ -1,0 +1,163 @@
+<form #uploadForm="ngForm" (submit)="submitDetails(uploadForm)">
+    <mat-toolbar color="primary">
+      <span>ViewTube Studio</span>
+    </mat-toolbar>
+    <!--<form class="example-form">-->
+    <div class="grid-container">
+      <div class="left">
+          <div>
+            <h1 class="videoDetailH">Video Details</h1>
+            <button mat-raised-button type="submit" class="saveBtn" [disabled]="!uploadForm.valid" (click)="submitDetails(uploadForm)">save</button>
+          </div>
+          <br>
+          <div>
+            <mat-form-field  appearance="outline">
+              <mat-label>video Url</mat-label>
+              <input matInput placeholder="Placeholder" #input1="ngModel" name="input1" required ngModel/>
+              <mat-hint>video url needs to be of type youtube embed</mat-hint>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field  appearance="outline">
+              <mat-label>Title</mat-label>
+              <input matInput #input maxlength="10" placeholder="Ex. Nougat" #input2="ngModel" name="input2" required ngModel/>
+              <mat-hint align="end">{{input.value?.length || 0}}/120</mat-hint>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field  appearance="outline">
+            <mat-label>Description</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+            </mat-form-field>  
+          </div>
+          <div>
+            <mat-form-field  appearance="outline">
+              <mat-label>Video Duration</mat-label>
+              <input matInput placeholder="Placeholder" #input3="ngModel" name="input3" required ngModel/>
+              <mat-hint>Enter the duration in the following format</mat-hint>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field  appearance="outline">
+              <mat-label>Chennel Title</mat-label>
+              <input matInput placeholder="Placeholder" #input4="ngModel" name="input4" required ngModel/>
+            </mat-form-field>
+          </div>
+          <div>
+            <h2>
+              Audience
+            </h2>
+            <p >Is this video made for kids?</p>
+            <mat-radio-button value="1">Yes,its made for kids</mat-radio-button>
+            <br>
+            <br>
+            <mat-radio-button value="2">Not for kids</mat-radio-button>
+          </div>
+          <br>
+          <div>
+            <h2>
+              Age Restriction
+            </h2>
+            <p >Is this video made for kids?</p>
+            <mat-radio-button value="1">Yes, Restrict my videos to viewers over 18</mat-radio-button>
+            <br>
+            <br>
+            <mat-radio-button value="2">No, don't restrict my videos to viewers over 18</mat-radio-button>
+          </div>
+          <br>
+          <div>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Video Tag</mat-label>
+              <input matInput placeholder="Video Tag" value="video">
+            </mat-form-field>
+          </div>
+          
+          <div>
+            <h2>Video Location</h2>
+            <mat-form-field appearance="fill">
+            <mat-label>Select location</mat-label>
+            <mat-select>
+            <mat-option value="option">Delhi</mat-option>
+            </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <h2>Licence</h2>
+            <mat-form-field appearance="fill">
+            <mat-label>select Licence</mat-label>
+            <mat-select>
+            <mat-option value="option">Standard Viewtube License</mat-option>
+            <mat-option value="option">Creative Common License</mat-option>
+            </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <h2>Distribution</h2>
+            <mat-form-field appearance="fill">
+            <mat-label>select Licence</mat-label>
+            <mat-select>
+            <mat-option value="option">Everywhere</mat-option>
+            <mat-option value="option">Make this video available only on monetized platforms</mat-option>
+            </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <h2>Video Category</h2>
+            <mat-form-field appearance="fill">
+            <mat-label>select Category</mat-label>
+            <mat-select>
+            <mat-option value="option">Film & Animation</mat-option>
+            <mat-option value="option">Autos & Vehicles</mat-option>
+            <mat-option value="option">Music</mat-option>
+            <mat-option value="option">Pets & Animals</mat-option>
+            <mat-option value="option">Sports</mat-option>
+            <mat-option value="option">Travel & Events</mat-option>
+            <mat-option value="option">Gaming</mat-option>
+            <mat-option value="option">People & Blogs</mat-option>
+            <mat-option value="option">Comedy</mat-option>
+            <mat-option value="option">Entertainment</mat-option>
+            <mat-option value="option">News & Politics</mat-option>
+            <mat-option value="option">Howto & Style</mat-option>
+            <mat-option value="option">Education</mat-option>
+            <mat-option value="option">Science & Technology</mat-option>
+            <mat-option value="option">Nonprofits & Activism</mat-option>
+            </mat-select>
+            </mat-form-field>
+          </div>
+          
+       </div>
+       <div class="right">
+         <h1>Video Preview</h1>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>Description</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+                  <p>
+                    Visibility : public 
+                    <br>
+                    <br>
+                    Distribution : Only on Monitorized platform
+                    <br>
+                    <br>
+                    Licence : Creative commons licence
+                  </p>
+          </mat-card-content>
+    
+          
+        </mat-card>
+  
+       </div>
+    </div>
+</form>
+
+
+
+
+
+  
+ <!-- <mat-form-field appearance="outline">
+                  <mat-label>Outline form field</mat-label>
+                  <input matInput placeholder="video Url">
+                  <mat-hint>video url needs to be of type youtube embed</mat-hint>
+                </mat-form-field>-->

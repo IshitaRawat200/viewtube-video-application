@@ -1,0 +1,24 @@
+mat-drawer-content{
+    padding: 10px;
+}
+#addtitle{
+    width: 650px;
+}
+
+.datefield{
+    padding-right:5px;
+    
+}
+.titlebar{
+    width: 50%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid-item{
+    width: 400px;
+}
+#txtbox{
+    width: 400px;
+}

@@ -1,0 +1,15 @@
+<div>
+  <h1>Login</h1>
+  <mat-form-field appearance="legacy">
+    <mat-label>Email Address</mat-label>
+    <input matInput name="email" ([ngModel])="email">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="legacy">
+    <mat-label>Password</mat-label>
+    <input matInput name="password" ([ngModel])="password">
+  </mat-form-field>
+  <br>
+  <button mat-stroked-button color="primary" (click)="register()">register</button>&nbsp;&nbsp;
+  <button mat-stroked-button color="primary">login</button>
+</div>

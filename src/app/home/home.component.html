@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="drawer.toggle()" class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+      <a routerLink="chips-bar">View Tube</a> 
+      <span class="example-spacer"></span>
+    <mat-form-field appearance="legacy">
+      <mat-label>search</mat-label>
+      <input matInput placeholder="Placeholder">
+    </mat-form-field>
+    <a href="">
+      <mat-icon matPrefix>search</mat-icon>
+    </a>
+      <a href="http://">
+        <mat-icon matPrefix>mice</mat-icon> 
+      </a>
+      
+      <span class="example-spacer"></span>
+      <a href="">
+        <mat-icon aria-hidden="true">notifications</mat-icon>
+      </a>
+      <a routerLink="video-upload" (click)="credential()">
+        <mat-icon>video_call</mat-icon>
+      </a>
+      <a href="">
+        <mat-icon>apps</mat-icon>
+      </a>
+      
+        <a href=""><mat-icon>perm_identity</mat-icon></a>
+        
+  </mat-toolbar>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <ul>
+            <li> <a href="http://">Home</a></li>
+            <br>
+            <li> <a href="http://">Explore</a></li>
+            <br>
+            <li> <a href="http://">Subscription</a></li>
+            <br>
+            <li> <a href="http://">Library</a></li>
+            <br>
+            <li> <a href="http://">History</a></li>
+        </ul>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+   </mat-drawer-content>
+    
+  </mat-drawer-container>
